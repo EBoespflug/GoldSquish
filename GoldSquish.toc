@@ -1,4 +1,4 @@
-## Interface: 70300
+## Interface: 80000
 ## Title: GoldSquish
 ## Author: Etienne Boespflug
 ## Version: 0.1a
