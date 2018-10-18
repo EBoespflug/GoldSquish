@@ -1,0 +1,6 @@
+## Interface: 70300
+## Title: GoldSquish
+## Author: Etienne Boespflug
+## Version: 0.1a
+
+main.lua
