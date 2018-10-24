@@ -3,4 +3,6 @@
 ## Author: Etienne Boespflug
 ## Version: 0.1a
 
+includes.xml
+
 main.lua
