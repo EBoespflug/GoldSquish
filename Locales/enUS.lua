@@ -6,12 +6,18 @@ L["wh"] = true
 
 L["Welcome Home!"] = true -- default message
 
-L["Message"] = true
-L["The message to be displayed when you get home."] = true
-L["<Your message>"] = true -- usage
+-- SPG & CPS
+L["Silver per gold"] = true
+L["The amount of silver contained in one gold."] = true
+L["Copper per silver"] = true
+L["The amount of copper contained in one silver."] = true
 
-L["Show in Chat"] = true
-L["Toggles the display of the message in the chat window."] = true
+L["exemple_value"] = "<ex: 0.1, 100, 1000>" -- usage
 
-L["Show on Screen"] = true
-L["Toggles the display of the message on the screen."] = true
+-- Force update
+L["Force update"] = true
+L["Force GoldSquish to apply immediatly the changes"] = true
+
+-- Reset to default
+L["Reset to default"] = true
+L["Reset all GoldSquish's Config to default values."] = true
