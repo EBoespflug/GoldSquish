@@ -2,5 +2,13 @@
 ## Title: GoldSquish
 ## Author: Etienne Boespflug
 ## Version: 0.1a
+## Notes : Allow you to set the value of golds in the game.
+## SavedVariables: GoldSquishDB
+## OptionalDeps: Ace3
+## X-Embeds: Ace3
+
+includes.xml
+
+Locales\Locales.xml
 
 main.lua
