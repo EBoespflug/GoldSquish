@@ -9,6 +9,6 @@
 
 includes.xml
 
-Locales\enUS.lua
+Locales\Locales.xml
 
 main.lua
