@@ -1,3 +1,7 @@
+-- main.lua - GoldSquish
+-- @author Etienne Boespflug
+-- @version 1.0
+
 GoldSquish = LibStub("AceAddon-3.0"):NewAddon("GoldSquish", "AceConsole-3.0", "AceEvent-3.0")
 local L = LibStub("AceLocale-3.0"):GetLocale("GoldSquish")
 

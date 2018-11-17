@@ -1,3 +1,7 @@
+-- enUS.lua - GoldSquish
+-- @author Etienne Boespflug
+-- @version 1.0
+
 local L = LibStub("AceLocale-3.0"):NewLocale("GoldSquish", "enUS", true)
 
 -- Chat commands
