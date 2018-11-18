@@ -2,7 +2,7 @@
 
 ## Overview
 
-A World Of Warcraft addons allowing interface-based gold squish in the game.
+A World Of Warcraft addons allowing interface-based gold squish in the game. The money is modified like if the game has a gold squish, simalar to the ilvl squish occured for WoD and BFA.
 
 ## Documentation
 
