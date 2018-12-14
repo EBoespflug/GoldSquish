@@ -92,38 +92,11 @@ function GoldSquish:OnInitialize()
 end
 
 function GoldSquish:OnEnable()
-    self:RegisterEvent("ZONE_CHANGED")
     self:UpdateSquish()
 end
 
 function GoldSquish:OnDisable()
   self:NoSquish()
-end
-
-function GoldSquish:ZONE_CHANGED()
-   if self.db.profile.showInChat then
-       self:Print(self.db.profile.message)
-   end
-
-   if self.db.profile.showOnScreen then
-       UIErrorsFrame:AddMessage(self.db.profile.message, 1.0, 1.0, 1.0, 5.0)
-   end
-end
-
-function GoldSquish:IsShowInChat(info)
-    return self.db.profile.showInChat
-end
-
-function GoldSquish:ToggleShowInChat(info, value)
-    self.db.profile.showInChat = value
-end
-
-function GoldSquish:IsShowOnScreen(info)
-    return self.db.profile.showOnScreen
-end
-
-function GoldSquish:ToggleShowOnScreen(info, value)
-    self.db.profile.showOnScreen = value
 end
 
 function GoldSquish:ChatCommand(input)
@@ -195,14 +168,13 @@ function GoldSquish:ResetToDefault()
   self:UpdateSquish()
 end
 
-function changeSquish(spg, cps)
+function GoldSquish::changeSquish(spg, cps)
   SILVER_PER_GOLD=spg
   COPPER_PER_SILVER=cps
 end
 
 function GoldSquish:UpdateSquish()
-  changeSquish(self.db.profile.spg, self.db.profile.cps)
-
+  self:changeSquish(self.db.profile.spg, self.db.profile.cps)
 end
 
 function GoldSquish:NoSquish()

@@ -1,7 +1,7 @@
-## Interface: 80000
+## Interface: 80100
 ## Title: GoldSquish
 ## Author: Etienne Boespflug
-## Version: 0.1a
+## Version: 1.0
 ## Notes : Allow you to set the value of golds in the game.
 ## SavedVariables: GoldSquishDB
 ## OptionalDeps: Ace3
