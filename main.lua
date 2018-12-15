@@ -7,7 +7,6 @@ local L = LibStub("AceLocale-3.0"):GetLocale("GoldSquish")
 
 local defaults = {
     profile = {
-        message = L["Welcome Home!"],
         cps = "100",
         spg = "100",
         squishMode = "x1"
@@ -87,6 +86,8 @@ function GoldSquish:OnInitialize()
 
     LibStub("AceConfig-3.0"):RegisterOptionsTable("GoldSquish", options)
     self.optionsFrame = LibStub("AceConfigDialog-3.0"):AddToBlizOptions("GoldSquish", "GoldSquish")
+    self:Print("Hello World!")
+    UIErrorsFrame:AddMessage("Hello World!", 1.0, 0.2, 0.2, 10.0, 5.0)
     self:RegisterChatCommand("goldsquish", "ChatCommand")
     self:RegisterChatCommand("gs", "ChatCommand")
 end
@@ -168,7 +169,7 @@ function GoldSquish:ResetToDefault()
   self:UpdateSquish()
 end
 
-function GoldSquish::changeSquish(spg, cps)
+function GoldSquish:changeSquish(spg, cps)
   SILVER_PER_GOLD=spg
   COPPER_PER_SILVER=cps
 end
