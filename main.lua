@@ -86,8 +86,6 @@ function GoldSquish:OnInitialize()
 
     LibStub("AceConfig-3.0"):RegisterOptionsTable("GoldSquish", options)
     self.optionsFrame = LibStub("AceConfigDialog-3.0"):AddToBlizOptions("GoldSquish", "GoldSquish")
-    self:Print("Hello World!")
-    UIErrorsFrame:AddMessage("Hello World!", 1.0, 0.2, 0.2, 10.0, 5.0)
     self:RegisterChatCommand("goldsquish", "ChatCommand")
     self:RegisterChatCommand("gs", "ChatCommand")
 end
@@ -97,7 +95,7 @@ function GoldSquish:OnEnable()
 end
 
 function GoldSquish:OnDisable()
-  self:NoSquish()
+    self:NoSquish()
 end
 
 function GoldSquish:ChatCommand(input)
@@ -109,7 +107,6 @@ function GoldSquish:ChatCommand(input)
 end
 
 function GoldSquish:SetMode(info, val)
-
   if val == "Custom" then
     -- do nothing
   elseif val == "x0.000000001" then
@@ -169,13 +166,13 @@ function GoldSquish:ResetToDefault()
   self:UpdateSquish()
 end
 
+function GoldSquish:UpdateSquish()
+  self:changeSquish(self.db.profile.spg, self.db.profile.cps)
+end
+
 function GoldSquish:changeSquish(spg, cps)
   SILVER_PER_GOLD=spg
   COPPER_PER_SILVER=cps
-end
-
-function GoldSquish:UpdateSquish()
-  self:changeSquish(self.db.profile.spg, self.db.profile.cps)
 end
 
 function GoldSquish:NoSquish()
