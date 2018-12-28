@@ -27,3 +27,14 @@ L["Force GoldSquish to apply immediatly the changes"] = true
 -- Reset to default
 L["Reset to default"] = true
 L["Reset all GoldSquish's Config to default values."] = true
+
+-- Errors
+L["squishMode_error"] = function(X)
+   return "error: unrecognized squish value: " .. X .. ".";
+end
+L["SPG_typeError"] = function(X)
+   return "error: invalid value: " .. X .. ".";
+end
+L["CPS_typeError"] = function(X)
+   return "error: invalid value: " .. X .. ".";
+end

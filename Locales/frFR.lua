@@ -28,7 +28,6 @@ L["Force GoldSquish to apply immediatly the changes"] = true
 L["Reset to default"] = true
 L["Reset all GoldSquish's Config to default values."] = true
 
-
 -- Force update
 L["Force update"] = "Forcez la mise à jour"
 L["Force GoldSquish to apply immediatly the changes"] = "Force GoldeSquish à appliquer la modification de monnaie immédiatement."
@@ -36,3 +35,14 @@ L["Force GoldSquish to apply immediatly the changes"] = "Force GoldeSquish à ap
 -- Reset to default
 L["Reset to default"] = "Réinitialiser"
 L["Reset all GoldSquish's Config to default values."] = "Réinitialiser la configuration de GoldSquish aux valeurs par défaut."
+
+-- Errors
+L["squishMode_error"] = function(X)
+   return "erreur : valeur non reconnue : " .. X .. ".";
+end
+L["SPG_typeError"] = function(X)
+   return "erreur : valeur invalide : " .. X .. ".";
+end
+L["CPS_typeError"] = function(X)
+   return "erreur : valeur invalide : " .. X .. ".";
+end

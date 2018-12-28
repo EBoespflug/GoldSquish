@@ -142,18 +142,29 @@ function GoldSquish:SetMode(info, val)
   elseif val == "x1000000000" then
     self.db.profile.spg = "0.01"
     self.db.profile.cps = "0.001"
+  else
+    self:Print(L["squishMode_error"](val))
+    return
   end
   self.db.profile.squishMode = val
   self:UpdateSquish()
 end
 
 function GoldSquish:SetSPG(info, val)
+  if tonumber(val) ~= nil or val < 0 then
+   self:Print(L["SPG_typeError"](val))
+   return
+  end
   self.db.profile.spg = val
   self.db.profile.squishMode = "Custom"
   self:UpdateSquish()
 end
 
 function GoldSquish:SetCPS(info, val)
+  if tonumber(val) ~= nil or val < 0 then
+   self:Print(L["CPS_typeError"](val))
+   return
+  end
   self.db.profile.cps = val
   self.db.profile.squishMode = "Custom"
   self:UpdateSquish()
